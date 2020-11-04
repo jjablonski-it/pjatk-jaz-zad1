@@ -14,7 +14,7 @@ public interface ProductLabelChecker {
 
     static void checkEverything(Product product) {
         if(product.getPrice() > 0 && product.getName().length() > 0 &&
-           !product.getCategory().equals(Category.UNKNOWN)) {
+                !product.getCategory().equals(Category.UNKNOWN)) {
             System.out.println("Everything in order.");
         }
     }

@@ -13,12 +13,18 @@ public class Exercise2 {
         List<Product> productList = Product.getSampleProductList();
 
         //suma cen za produkty o krotkich nazwach
-//        Optional<Double> sum = ;
+        Optional<Double> sum = productList.stream()
+                .filter(p -> p.getName().length() <= 5)
+                .map(Product::getPrice)
+                .reduce(Double::sum);
+
+        System.out.println(sum.get());
 
         //mapa kategoria -> sumaryczna wartosc produktow
-//        Map<Category, Double> collect = ;
+        Map<Category, Double> collect = productList.stream()
+                .collect(Collectors.toMap(Product::getCategory, Product::getPrice, Double::sum));
 
-//        System.out.println(collect);
+        System.out.println(collect);
 
     }
 }

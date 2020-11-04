@@ -18,6 +18,6 @@ public class Exercise0 {
             productChecker.checkLabel(product);
         }
 
-//        sampleProductList.forEach(...);
+//        sampleProductList.forEach();
     }
 }

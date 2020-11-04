@@ -19,6 +19,10 @@ public class Exercise0 {
         System.out.println(result);
     }
 
+
+
+
+
     public static void newSwitch(String day) {
         var result = switch (day) {
             case "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" -> "week day";

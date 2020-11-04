@@ -11,10 +11,10 @@ import java.util.function.Supplier;
 
 public class Exercise1 {
 
-//    Runnable runnable =
-//    Predicate<Product> predicate =
-//    Comparator<Product> comparator =
-//    Supplier<Product> supplier =
-//    Consumer<Product> consumer =
-//    Function<Product, Boolean> function =
+    Runnable runnable = () -> {};
+    Predicate<Product> predicate = x -> true;
+    Comparator<Product> comparator = (x1, x2) -> x1.getName().compareTo(x2.getName());
+    Supplier<Product> supplier = () -> new Product();
+    Consumer<Product> consumer = x -> System.out.println(x);
+    Function<Product, Double> function = x -> x.getPrice();
 }

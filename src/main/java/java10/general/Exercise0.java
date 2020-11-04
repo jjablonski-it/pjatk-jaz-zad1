@@ -12,5 +12,9 @@ public class Exercise0 {
         }
     }
 
+//    public void test(var test) {
+//        var i = 2;
+//    }
+
     //wprowadzili tez poprawki do Garbage Collectora G1 GC wprowadzonego w Javie 9
 }
