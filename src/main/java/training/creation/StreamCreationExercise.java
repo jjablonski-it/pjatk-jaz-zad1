@@ -35,7 +35,7 @@ public class StreamCreationExercise implements StreamCreator {
     @Override
     public Stream<String> alphabet() {
         IntStream chars = IntStream.range(65, 91);
-        return chars.mapToObj(val -> Character.toString(val));
+        return chars.mapToObj(Character::toString);
     }
 
 }
